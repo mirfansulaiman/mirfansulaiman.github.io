@@ -75,7 +75,7 @@ timeline :
 * 13:00 pm - 17:00 pm : enum, enum, enum 
 * 17:00 pm - 20:20 pm : Berhasil retas 1 mesin +25 point
 * 20:20 pm - 21:30 pm : enum, enum, enum mesin terakhir.
-* 21:30 pm - END      : Saya ketiduran sehingga tidak bisa menyelesaikan mesin yang terakhir dengan nilai point 20
+* 21:30 pm - END      : Saya ketiduran diatas meja laptop sehingga tidak bisa menyelesaikan mesin yang terakhir dengan nilai point 20
 
 Pada pukul 17:00 pm - 20:20 pm sebenernya saya sudah tidak fokus lagi disini, saya khawatir dan takut akan gagal dalam ujian ini. Dikarenakan saya belum di posisi aman, saya harus meretas 1 mesin lagi untuk bisa lulus. Sakin tidak fokusnya tangan saya gemetar, dikepala serasa ada burung-burung yang terbang mengelilingi kepala saya, akhirnya saya istirahat sejenak sekitar 5 menit untuk menjernihkan otak sementara karena dalam waktu selama itu saya belum berhasil melakukan privelege escalation di mesin yang ke tiga, hanya dapat low shell. Akhirnya setelah enumerasi perlahan-lahan saya berhasil mendapatkan akses root pada mesin tersebut :) 
 
