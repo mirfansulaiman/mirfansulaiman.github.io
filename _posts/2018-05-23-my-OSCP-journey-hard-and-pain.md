@@ -113,7 +113,7 @@ Wow, I am pass !!
 6. Beleive
 
 ## Thank you note.
-As gratitude I would like to thank the family who have supported me throughout this OSCP until exams are over, Thanks to my girlfriend whom remind me to take some food to eat at sahur and at Maghrib during exam (It will be fun if you have girlfriend :D ), and of course for my friends from work [Vantage Point Security Singapore](http://vantagepoint.sg/) & [Vantage Point Security Indonesian](http://vantagepoint.co.id/) Wen bin, Eka Tan, Ryan, JK, Saed, David Harley, Wira, Suman, James, David, dan tuyen whom give me a motivation and suggestions. Especially for Paul Craig who has provided accommodation during the exam and give me a motivation so far also very kindness.
+As gratitude I would like to thank the family who have supported me throughout this OSCP until exams are over, Thanks to my girlfriend whom remind me to take some food to eat at sahur and at Maghrib during exam (It will be fun if you have girlfriend :D ), and of course for my friends from work [Vantage Point Security Singapore](http://vantagepoint.sg/) & [Vantage Point Security Indonesian](http://vantagepoint.co.id/) Wen bin, Eka Tan, Ryan, JK, Saed, David Harley, Wira, Suman, James, David, dan tuyen whom give me a spirit and motivation. Especially for Paul Craig who has provided accommodation during the exam and give me a motivation so far also very kindness.
 
 ## Note
 
