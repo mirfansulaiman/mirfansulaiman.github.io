@@ -30,17 +30,10 @@ disqus_shortname:   mirfansulaiman
 
 # Social
 # if you don't have any of social below, comment the line.
-google:
-  plus:            104893175231460724024
-  #analytics:
-  #verify:
-  #ad-client:
-  #ad-slot:
-#bing-verify:
 email:              mirfansulaiman96@gmail.com
 twitter:            mirfansulaiman
-facebook:           noname
-github-url:         https://github.com/mirfansulaiman
+facebook:           mirfansulaiman
+github-url:         mirfansulaiman
 #stackoverflow:     123456/username   from a "http://stackoverflow.com/users/123456/username" link
 #linkedin:          username
 #xing:              username
@@ -50,7 +43,7 @@ github-url:         https://github.com/mirfansulaiman
 #medium:            '@username'
 #pinterest:         username
 #foursquare:        username
-steam:              username
+#steam:              username
 #dribbble:          username
 #youtube:           username
 #youtube-channel:   channel
