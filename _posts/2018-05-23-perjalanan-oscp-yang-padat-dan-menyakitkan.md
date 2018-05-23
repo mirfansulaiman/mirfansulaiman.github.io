@@ -6,7 +6,8 @@ excerpt: "Pengalaman saya selama perjalanan menuju sertifikasi OSCP"
 tags: [it security, OSCP, blog, indonesia]
 comments: true
 ---
-{: .notice}**Watch out!**Artikel ini ditulis dalam versi bahasa indonesia, untuk versi bahasa inggris ada disini [english version](http://mirfansulaiman.github.io/my-OSCP-journey-hard-and-pain)
+**Watch out!** Artikel ini ditulis dalam versi bahasa indonesia, untuk versi bahasa inggris ada disini [english version](http://mirfansulaiman.github.io/my-OSCP-journey-hard-and-pain)
+{: .notice}
 
 ## Pendahuluan
 <figure>
@@ -25,6 +26,10 @@ Sebelum memulai saya banyak membaca blog mengenai ujian oscp, salah satunya mili
 
 Oke sebelum mengambil ujian OSCP saya ambil lab yang 90 hari, mulai pada tanggal 18 Maret 2018 dan seharusnya selesai pada tanggal 18 juni. Namun karna ada permintaan khusus dari Bos dan bulan juni ada jadwal sidang skripsi maka saya ambil lah exam dibulan mei ini. untuk pilihan pelatihannya saya mengambil akses lab yang 30 hari dan faktanya adalah saya hanya 2 bulan belajar dilab kemudian langsung exam.
 
+<figure>
+	<a href="https://www.offensive-security.com/wp-content/uploads/2014/12/offsec-playground-thumb-21.jpg"><img src="https://www.offensive-security.com/wp-content/uploads/2014/12/offsec-playground-thumb-21.jpg"></a>
+</figure>
+
 Di lab internal ini pun terdapat puluhan mesin komputer yang bisa kita retas dengan sistem operasi yang berbeda-beda, Percaya lah buat kalian yang akan mengambil ujian OSCP alangkah baiknya selesaikan semua mesin didalam lab ini karna banyak metode dan cara-cara yang seketika akan berguna saat exam ataupun didunia nyata :) .
 
 Belajar OSCP sambil mengerjakan skripsi sungguh menyakitkan, karna perlu fokus terbagi menjadi dua. Tapi selama 2 bulan ini saya bagi waktu antara mengerjakan lab OSCP dan mengerjakan skripsi. 
@@ -41,6 +46,13 @@ buka puasa pun hanya minum air putih. Dan untuk sahur terbantu dengan adanya Go-
 
 Saya menjadwalkan ujian pada tanggal 20 Mei 2018 pukul 00:00 pada dimulainya tanggal itu, yang berarti itu tengah malam pada malam minggu. Segala semua persiapan sudah saya siapkan sebelum memulai, mulai dari tools yang sekiranya akan digunakan dan catatan-catatan kecil.
 
+<figure>
+	<a href="/images/exam-date-full.PNG"><img src="/images/exam-date-full.PNG"></a>
+	<figcaption>Exam Booking Date</figcaption>
+</figure>
+
+Namun saya untuk booking ujian pada bulan mei tersebut ternyata sudah full, jadi saya harus mengganti tanggal ujian atau menunggu murid yang membatalkan jadwal ujiannya. Nah disini saya membuat script python sederhana untuk mengecek setiap 5 menit apakah murid yang membatalkan jadwal ujiannya pada bulan mei. Setelah saya mendapatkan tanggal ujian, saya mau berbagi script ini namun setelah berbicara dengan pihak offensive-security apakah boleh membuat robot untuk mengecek jadwal ujian secara otomatis ternyata hal seperti ini dilarang. Jadi saya urungkan niat untuk share script tersebut. hehehe <i>peace</i>
+
 Sebelum mulai saya membaca petunjuk dan peraturan dalam ujian ini disini [Exam Guide](https://support.offensive-security.com/#!oscp-exam-guide.md) perlu diingat petunjuk dan peraturan ujian bisa berubah sewaktu-waktu jadi pastikan baca petunjuknya lagi 3 jam sebelum memulai exam !.
 
 Waktu yang diberikan dalam exam ini adalah 24 jam, hanya ada 6 mesin yang diberikan kepada kita 1 mesin hanya sebagai debugger untuk test exploit stack overflow. 
@@ -53,17 +65,17 @@ Pada saat ujian dimulai, Saya mendapatkan email dari offensive-security mengenai
 Berikut adalah timeline pengerjaan saya dalam exam, kurang lebih seperti ini : 
 
 timeline :
-*00:00 am - 02:00 am : Information Gathering, scanning port disetiap mesin.
-*02:00 am - 04:00 am : Berhasil retas 1 mesin +10 point
-*04:00 am - 05:00 am : Istirahat, makan sahur + sholat shubuh.
-*05:00 am - 06:00 am : Berhasil retas 1 mesin stack overflow +25 point
-*06:00 am - 09:00 am : Tidur, tidur, tidur.
-*09:00 am - 12:00 am : Berhasil retas 1 mesin +20 point 
-*12:00 pm - 13:00 pm : Sholat dzuhur + Mandi
-*13:00 pm - 17:00 pm : enum, enum, enum 
-*17:00 pm - 20:20 pm : Berhasil retas 1 mesin +25 point
-*20:20 pm - 21:30 pm : enum, enum, enum mesin terakhir.
-*21:30 pm - END      : Saya ketiduran sehingga tidak bisa menyelesaikan mesin yang terakhir dengan nilai point 20
+* 00:00 am - 02:00 am : Information Gathering, scanning port disetiap mesin.
+* 02:00 am - 04:00 am : Berhasil retas 1 mesin +10 point
+* 04:00 am - 05:00 am : Istirahat, makan sahur + sholat shubuh.
+* 05:00 am - 06:00 am : Berhasil retas 1 mesin stack overflow +25 point
+* 06:00 am - 09:00 am : Tidur, tidur, tidur.
+* 09:00 am - 12:00 am : Berhasil retas 1 mesin +20 point 
+* 12:00 pm - 13:00 pm : Sholat dzuhur + Mandi
+* 13:00 pm - 17:00 pm : enum, enum, enum 
+* 17:00 pm - 20:20 pm : Berhasil retas 1 mesin +25 point
+* 20:20 pm - 21:30 pm : enum, enum, enum mesin terakhir.
+* 21:30 pm - END      : Saya ketiduran sehingga tidak bisa menyelesaikan mesin yang terakhir dengan nilai point 20
 
 pada pukul 17:00 pm - 20:20 pm sebenernya saya sudah tidak fokus lagi disini, saya khawatir dan takut akan gagal dalam ujian ini. Dikarenakan saya belum di posisi aman, saya harus meretas 1 mesin lagi untuk bisa lulus. Sakin tidak fokusnya tangan saya gemetar, dikepala serasa ada burung-burung yang terbang mengelilingi kepala saya, akhirnya saya istirahat sejenak sekitar 5 menit untuk menjernihkan otak sementara karena dalam waktu selama itu saya belum berhasil melakukan privelege escalation di mesin yang ke tiga, hanya dapat low shell. Akhirnya setelah enumerasi perlahan-lahan saya berhasil mendapatkan akses root pada mesin tersebut :) 
 
@@ -78,7 +90,7 @@ Setelah 2 hari kemudian saya mendapatkan email berikut :
 	<figcaption>Penetration Testing with Kali Linux - OSCP Certification Exam Results - OS-XXXXXX</figcaption>
 </figure>
 
-Wow, Aku lulus !
+Wow, Saya lulus !
 
 <figure>
 	<a href="https://lh3.googleusercontent.com/CBMuZb8_mEFh46IQM2UGM2Pu-AlPkGJECx1QLphn0bQ=w688-h264-no"><img src="https://lh3.googleusercontent.com/CBMuZb8_mEFh46IQM2UGM2Pu-AlPkGJECx1QLphn0bQ=w688-h264-no"></a>
