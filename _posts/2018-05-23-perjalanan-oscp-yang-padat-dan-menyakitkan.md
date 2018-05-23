@@ -77,7 +77,11 @@ timeline :
 * 20:20 pm - 21:30 pm : enum, enum, enum mesin terakhir.
 * 21:30 pm - END      : Saya ketiduran sehingga tidak bisa menyelesaikan mesin yang terakhir dengan nilai point 20
 
-pada pukul 17:00 pm - 20:20 pm sebenernya saya sudah tidak fokus lagi disini, saya khawatir dan takut akan gagal dalam ujian ini. Dikarenakan saya belum di posisi aman, saya harus meretas 1 mesin lagi untuk bisa lulus. Sakin tidak fokusnya tangan saya gemetar, dikepala serasa ada burung-burung yang terbang mengelilingi kepala saya, akhirnya saya istirahat sejenak sekitar 5 menit untuk menjernihkan otak sementara karena dalam waktu selama itu saya belum berhasil melakukan privelege escalation di mesin yang ke tiga, hanya dapat low shell. Akhirnya setelah enumerasi perlahan-lahan saya berhasil mendapatkan akses root pada mesin tersebut :) 
+Pada pukul 17:00 pm - 20:20 pm sebenernya saya sudah tidak fokus lagi disini, saya khawatir dan takut akan gagal dalam ujian ini. Dikarenakan saya belum di posisi aman, saya harus meretas 1 mesin lagi untuk bisa lulus. Sakin tidak fokusnya tangan saya gemetar, dikepala serasa ada burung-burung yang terbang mengelilingi kepala saya, akhirnya saya istirahat sejenak sekitar 5 menit untuk menjernihkan otak sementara karena dalam waktu selama itu saya belum berhasil melakukan privelege escalation di mesin yang ke tiga, hanya dapat low shell. Akhirnya setelah enumerasi perlahan-lahan saya berhasil mendapatkan akses root pada mesin tersebut :) 
+
+<figure>
+	<a href="https://78.media.tumblr.com/412e18b8c19a1cc75f77b0d4f672073c/tumblr_p16yf0SkWa1tsyxa7o1_500.gif"><img src="https://78.media.tumblr.com/412e18b8c19a1cc75f77b0d4f672073c/tumblr_p16yf0SkWa1tsyxa7o1_500.gif"></a>
+</figure>
 
 Akhirnya saya dapat menyelesaikan 4 mesin dengan jumlah point adalah 80 point, sudah cukup untuk lolos ujian ini :) ya walaupun saya menyesalkan akibat ketiduran tapi untuk lulus saja sudah sangat senang :) dan akibatnya saya ketinggalan sahur untuk makan :(
 
