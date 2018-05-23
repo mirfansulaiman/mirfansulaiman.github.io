@@ -16,7 +16,7 @@ comments: true
 
 Alhamdulillah, I finally got another chance to blogging, after so long after my personal website removed because I cant pay hosting bills and domain (Ups) wkwkkwk. And now I decided to use [github pages](https://pages.github.com/) as my personal website :)
 
-Okay,i want to tell you a little about my experience during the trip to OSCP certification, in 2014 I had a dream to get this OSCP certification because I heard from my friends in [forum](http://www.indonesianbacktrack.or.id/forum/index.php), I believe that having this certification is the greatest thing in achieving being a penetration testing IT expert (https://en.wikipedia.org/wiki/Penetration_test) because it's not easy to get it, but in this year 2018 coinciding in [ramadhan holy month](https://en.wikipedia.org/wiki/Ramadan) alhamdulillah I had the opportunity to realize my dream 4 years ago. What a valuable thing in my life, because dreams come true. I am really grateful to Allah swt and [PT Vantage Point Indonesia] (http://vantagepoint.co.id/) who has helped me realize my dream.
+Okay,i want to tell you a little about my experience during the trip to OSCP certification, in 2014 I had a dream to get this OSCP certification because I heard from my friends in [forum](http://www.indonesianbacktrack.or.id/forum/index.php), I believe that having this certification is the greatest thing in achieving being a penetration testing IT expert (https://en.wikipedia.org/wiki/Penetration_test) because it's not easy to get it, but in this year 2018 coinciding in [ramadhan holy month](https://en.wikipedia.org/wiki/Ramadan) alhamdulillah I had the opportunity to realize my dream 4 years ago. What a valuable thing in my life, because dreams come true. I am really grateful to Allah swt and [PT Vantage Point Indonesia](http://vantagepoint.co.id/) who has helped me realize my dream.
 
 Basicly, i am programmer, not expert not noob hmm ya midle :D , i interested IT Security since i am in junior high school and now continues studiy at universities in jakarta and doing final task (undergraduate thesis) ! 
 
@@ -24,7 +24,7 @@ Before starting I read many blogs about oscp exam, one of which belongs to my of
 
 ## OSCP Lab Internal
 
-Okay before taking the OSCP exam I took the 90 days lab, starting on March 18, 2018 and it should be finished on June 18th. But because there is a special request from My boss and at the month of June there is a schedule for my test in school then I took the exam in May this month. for my training option I took a 90 day lab access and the fact is I only 2 months studied dilab then took exam.
+Okay before taking the OSCP exam I took the 90 days lab, starting on March 18, 2018 and it should be finished on June 18th. But because there is a special request from My boss and at the month of June there is a schedule for my test in school then I took the exam in May this month. for my training option I took a 90 day lab access and the fact is I only 2 months studied on the lab then took exam.
 
 <figure>
 	<a href="https://www.offensive-security.com/wp-content/uploads/2014/12/offsec-playground-thumb-21.jpg"><img src="https://www.offensive-security.com/wp-content/uploads/2014/12/offsec-playground-thumb-21.jpg"></a>
