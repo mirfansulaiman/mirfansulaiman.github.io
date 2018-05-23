@@ -76,7 +76,7 @@ Timeline :
 * 20:20 pm - 21:30 pm : enum, enum, enum last machine.
 * 21:30 pm - END      : I overslept at my desk so I could not finish the last machine with a point value of 20
 
-At 17:00 pm - 20:20 pm actually I'm not focused anymore here, I'm worried and afraid will be fail in this exam. Since I have not been in a safe position, I have to hack 1 more machine to pass. Sakin did not focus my hands trembling, headed like there are birds flying around my head, I finally take a break about 5 minutes to clear the brain temporarily because in that time I have not managed to do privelege escalation on the third machine, only get low shell. Finally after enumerating slowly I managed to get root access on the machine :)
+At 17:00 pm - 20:20 pm actually I'm not focused anymore here, I'm worried and afraid will be fail in this exam. Since I have not been in a safe position, I have to hack 1 more machine to pass. While did not focus my hands trembling, headed like there are birds flying around my head, I finally take a break about 5 minutes to clear the brain temporarily because in that time I have not managed to do privelege escalation on the third machine, only get low shell. Finally after enumerating slowly I managed to get root access on the machine :)
 
 <figure>
 	<a href="https://78.media.tumblr.com/412e18b8c19a1cc75f77b0d4f672073c/tumblr_p16yf0SkWa1tsyxa7o1_500.gif"><img src="https://78.media.tumblr.com/412e18b8c19a1cc75f77b0d4f672073c/tumblr_p16yf0SkWa1tsyxa7o1_500.gif"></a>
