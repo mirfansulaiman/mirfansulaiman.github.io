@@ -24,7 +24,7 @@ Sebelum memulai saya banyak membaca blog mengenai ujian oscp, salah satunya mili
 
 ## OSCP Lab Internal
 
-Oke sebelum mengambil ujian OSCP saya ambil lab yang 90 hari, mulai pada tanggal 18 Maret 2018 dan seharusnya selesai pada tanggal 18 juni. Namun karna ada permintaan khusus dari Bos dan bulan juni ada jadwal sidang skripsi maka saya ambil lah exam dibulan mei ini. untuk pilihan pelatihannya saya mengambil akses lab yang 30 hari dan faktanya adalah saya hanya 2 bulan belajar dilab kemudian langsung exam.
+Oke sebelum mengambil ujian OSCP saya ambil lab yang 90 hari, mulai pada tanggal 18 Maret 2018 dan seharusnya selesai pada tanggal 18 juni. Namun karna ada permintaan khusus dari Bos dan bulan juni ada jadwal sidang skripsi maka saya ambil lah exam dibulan mei ini. untuk pilihan pelatihannya saya mengambil akses lab yang 90 hari dan faktanya adalah saya hanya 2 bulan belajar dilab kemudian langsung exam.
 
 <figure>
 	<a href="https://www.offensive-security.com/wp-content/uploads/2014/12/offsec-playground-thumb-21.jpg"><img src="https://www.offensive-security.com/wp-content/uploads/2014/12/offsec-playground-thumb-21.jpg"></a>
@@ -103,14 +103,10 @@ Wow, Saya lulus !
 
 ## Saran
 1. Pastikan kondisi anda sedang fit dan tidak sakit, jaga kondisi kesehatan anda karna otak anda akan dipaksa bekerja 24 jam.
-
 <figure>
 	<a href="/images/oscp-brain-talking.jpg"><img src="/images/oscp-brain-talking.jpg"></a>
 	<figcaption>Brain Talking</figcaption>
 </figure>
-
-Sehari sebelum ujian, saya sakit kekurangan darah. Karena kekurangan istirahat, sudah banyak begadang dari hari-hari sebelumnya.
-
 2. Paham dasar-dasar jaringan dan pemograman.
 3. Pastikan waktu anda khusus untuk OSCP, agar fokus anda hanya untuk OSCP. Jujur ambil OSCP sambil skripsian itu gak enakkkkk!! 
 4. Selesaikan semua soal latihan di sylabus module pwk dan 10 mesin dilab internal untuk mendapatkan bonus point. Kecuali jika anda cukup yakin untuk lulus, saya sendiri hanya mengirimkan laporan ujiannya saja dikarenakan saya belum menyelesaikan soal-soal latihan didalam sylabus module pwk karena terlalu fokus pada lab internal.
@@ -118,4 +114,4 @@ Sehari sebelum ujian, saya sakit kekurangan darah. Karena kekurangan istirahat, 
 6. Yakin dan berdoa.
 
 ## Ucapan Terima Kasih
-Sebagai rasa syukur saya mengucapkan terima kasih kepada keluarga yang telah mendukung saya selama perjalanan oscp ini hingga ujian selesai, Terima kasih juga kepada pacar saya dea zachra aulia yang sudah ingetin buat sahur sama buka puasa selama ujian (Enak ya ga jomblo :D ), dan tentunya buat teman-teman dari kantor [Vantage Point Security Singapore](http://vantagepoint.sg/) & [Vantage Point Security Indonesian](http://vantagepoint.co.id/) Wen bin, Eka Tan, Ryan, JK, Saed, David Harley, Wira, Suman, James, David, dan tuyen yang telah memberikan semangat kepada saya. Spesial khusus untuk Paul Craig yang telah menyediakan akomodasi selama ujian dan memberikan motivasi selama ini. 
+Sebagai rasa syukur saya mengucapkan terima kasih kepada keluarga yang telah mendukung saya selama perjalanan oscp ini hingga ujian selesai, Terima kasih juga kepada pacar saya yang sudah ingetin buat sahur sama buka puasa selama ujian (Enak ya ga jomblo :D ), dan tentunya buat teman-teman dari kantor [Vantage Point Security Singapore](http://vantagepoint.sg/) & [Vantage Point Security Indonesian](http://vantagepoint.co.id/) Wen bin, Eka Tan, Ryan, JK, Saed, David Harley, Wira, Suman, James, David, dan tuyen yang telah memberikan semangat kepada saya. Spesial khusus untuk Paul Craig yang telah menyediakan akomodasi selama ujian dan memberikan motivasi selama ini. 

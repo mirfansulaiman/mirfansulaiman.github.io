@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Perjalanan OSCP yang padat dan menyakitkan"
+title: "My OSCP Journey is dense and painful"
 date: 2018-05-23
-excerpt: "Pengalaman saya selama perjalanan menuju sertifikasi OSCP"
-tags: [it security, OSCP, blog, indonesia]
+excerpt: "My experience during the journey towards certification OSCP"
+tags: [it security, OSCP, blog, english]
 comments: true
 ---
 **Watch out!** This is post using english language, if you find bahasa version see this [Indonesian Version](http://mirfansulaiman.github.io/perjalanan-oscp-yang-padat-dan-menyakitkan)
@@ -14,108 +14,107 @@ comments: true
 	<a href="https://kaizensecurity.files.wordpress.com/2016/05/oscp-certs.png"><img src="https://kaizensecurity.files.wordpress.com/2016/05/oscp-certs.png"></a>
 </figure>
 
-Alhamdulillah akhirnya saya didapat kesempatan lagi untuk blogging, setelah sekian lamanya setelah website pribadi saya dihapus karna pada saat itu saya tidak mampu membayar tagihan hosting dan domain Ups wkwkkwk. Akhirnya saya memutuskan menggunakan [github pages](https://pages.github.com/) sebagai website personal saya :)
+Alhamdulillah, I finally got another chance to blogging, after so long after my personal website removed because I cant pay hosting bills and domain (Ups) wkwkkwk. And now I decided to use [github pages](https://pages.github.com/) as my personal website :)
 
-Oke saatnya saya bercerita sedikit mengenai pengalaman saya selama perjalanan menuju sertifikasi OSCP, pada tahun 2014 yang lalu saya mempunyai impian untuk mendapatkan sertifikasi OSCP ini karena mendengar dari teman-teman [forum](http://www.indonesianbacktrack.or.id/forum/index.php) saya bahwa memiliki sertifikasi ini adalah hal terbesar dalam pencapaian sebagai ahli IT Security bidang [penetration testing](https://en.wikipedia.org/wiki/Penetration_test) karena tidak mudah untuk mendapatkannya, Namun pada tahun 2018 ini bertepatan pada [bulan suci ramadhan](https://en.wikipedia.org/wiki/Ramadan) alhamdulillah saya berkesempatan mewujudkan impian saya 4 tahun yang lalu. Sungguh sesuatu yang berharga dalam hidup saya, karena mimpi menjadi kenyataan. Saya sungguh berterimakasih kepada Allah swt dan [PT Vantage Point Indonesia](http://vantagepoint.co.id/) yang telah membantu mewujudkan impian saya. 
+Okay,i want to tell you a little about my experience during the trip to OSCP certification, in 2014 I had a dream to get this OSCP certification because I heard from my friends in [forum](http://www.indonesianbacktrack.or.id/forum/index.php), I believe that having this certification is the greatest thing in achieving being a penetration testing IT expert (https://en.wikipedia.org/wiki/Penetration_test) because it's not easy to get it, but in this year 2018 coinciding in [ramadhan holy month](https://en.wikipedia.org/wiki/Ramadan) alhamdulillah I had the opportunity to realize my dream 4 years ago. What a valuable thing in my life, because dreams come true. I am really grateful to Allah swt and [PT Vantage Point Indonesia] (http://vantagepoint.co.id/) who has helped me realize my dream.
 
-Pada dasar saya adalah seorang programmer level medium tidak expert, saya menyukai IT Security sejak dari duduk dibangku sekolah SMK dan melanjutkan pendidikan saya di salah satu perguruan tinggi swasta dijakarta. 
+Basicly, i am programmer, not expert not noob hmm ya midle :D , i interested IT Security since i am in junior high school and now continues studiy at universities in jakarta and doing final task (undergraduate thesis) ! 
 
-Sebelum memulai saya banyak membaca blog mengenai ujian oscp, salah satunya milik teman kantor saya [Wen bin](https://kongwenbin.wordpress.com/2017/02/23/officially-oscp-certified/) dan juga blog milik panutan saya om [Matias prasodjo](https://gauli.com/oscp-certification-review/) dan blog-blog lainnya.
+Before starting I read many blogs about oscp exam, one of which belongs to my office friend [Wen bin](https://kongwenbin.wordpress.com/2017/02/23/officially-oscp-certified/) and also blog my shifu [Matias prasodjo](https://gauli.com/oscp-certification-review/) and many more.
 
 ## OSCP Lab Internal
 
-Oke sebelum mengambil ujian OSCP saya ambil lab yang 90 hari, mulai pada tanggal 18 Maret 2018 dan seharusnya selesai pada tanggal 18 juni. Namun karna ada permintaan khusus dari Bos dan bulan juni ada jadwal sidang skripsi maka saya ambil lah exam dibulan mei ini. untuk pilihan pelatihannya saya mengambil akses lab yang 30 hari dan faktanya adalah saya hanya 2 bulan belajar dilab kemudian langsung exam.
+Okay before taking the OSCP exam I took the 90 days lab, starting on March 18, 2018 and it should be finished on June 18th. But because there is a special request from My boss and at the month of June there is a schedule for my test in school then I took the exam in May this month. for my training option I took a 90 day lab access and the fact is I only 2 months studied dilab then took exam.
 
 <figure>
 	<a href="https://www.offensive-security.com/wp-content/uploads/2014/12/offsec-playground-thumb-21.jpg"><img src="https://www.offensive-security.com/wp-content/uploads/2014/12/offsec-playground-thumb-21.jpg"></a>
 </figure>
 
-Di lab internal ini pun terdapat puluhan mesin komputer yang bisa kita retas dengan sistem operasi yang berbeda-beda, Percaya lah buat kalian yang akan mengambil ujian OSCP alangkah baiknya selesaikan semua mesin didalam lab ini karna banyak metode dan cara-cara yang seketika akan berguna saat exam ataupun didunia nyata :) .
+In this internal lab there are dozens of computer machines that we can hack with different operating systems, Believe it is for you who will take the OSCP exam would be nice to finish all the machines in this lab because many methods and ways that will instantly be useful when exam or real world :) 
 
-Belajar OSCP sambil mengerjakan skripsi sungguh menyakitkan, karna perlu fokus terbagi menjadi dua. Tapi selama 2 bulan ini saya bagi waktu antara mengerjakan lab OSCP dan mengerjakan skripsi. 
+Learning OSCP while doing the thesis is really painful, because the focus needs to be divided into two. But for 2 months I share the time between working on OSCP lab and doing my undergraduate thesis.
 
-mesin yang saya dapatkan saat sebelum ujian adalah alice, phoenix, mike, barry, payday, ralph, pain, leftturn, bethany, beta, gamma, bob, tophat, dotty, sherlock, gh0st, fc4, helpdesk, susie, oracle, kraken, hotline, punchout, master, jeff, joe, jd, mail, kevin, core, sean, nicky, brett. 
+the machine I got before the exam is alice, phoenix, mike, barry, payday, ralph, pain, leftturn, bethany, beta, gamma, bob, tophat, dotty, sherlock, gh0st, fc4, helpdesk, susie, oracle, kraken, hotline, punchout, master, jeff, joe, jd, mail, kevin, core, sean, nicky, brett. 
 
-Total 33 Mesin.
+Total 33 Machines.
 
 ## OSCP Exam
 
-Lanjut ke exam.
-Dalam exam ini saya melaksanakan ibadah puasa, jadi tidak makan ataupun minum selama mengerjakan ujiannya.
-buka puasa pun hanya minum air putih. Dan untuk sahur terbantu dengan adanya Go-food. 
+Go to exam.
+In this exam I perform fasting, so do not eat or drink during the test.
+even fasting just drinking water. And for food i bought with Go-food.
 
-Saya menjadwalkan ujian pada tanggal 20 Mei 2018 pukul 00:00 pada dimulainya tanggal itu, yang berarti itu tengah malam pada malam minggu. Segala semua persiapan sudah saya siapkan sebelum memulai, mulai dari tools yang sekiranya akan digunakan dan catatan-catatan kecil.
+I schedule an exam on May 20, 2018 at 00:00 on the start of that date, which means it's midnight on a Saturday night. All the preparations I have prepared before starting, ranging from tools that would otherwise be used and small notes.
 
 <figure>
 	<a href="/images/exam-date-full.PNG"><img src="/images/exam-date-full.PNG"></a>
 	<figcaption>Exam Booking Date</figcaption>
 </figure>
 
-Namun saya untuk booking ujian pada bulan mei tersebut ternyata sudah full, jadi saya harus mengganti tanggal ujian atau menunggu murid yang membatalkan jadwal ujiannya. Nah disini saya membuat script python sederhana untuk mengecek setiap 5 menit apakah murid yang membatalkan jadwal ujiannya pada bulan mei. Setelah saya mendapatkan tanggal ujian, saya mau berbagi script ini namun setelah berbicara dengan pihak offensive-security apakah boleh membuat robot untuk mengecek jadwal ujian secara otomatis ternyata hal seperti ini dilarang. Jadi saya urungkan niat untuk share script tersebut. hehehe <i>peace</i>
+However, I booked for the exam in May that it was full, so I had to change the test date or wait for the students who canceled the exam schedule. Well here I created a simple python script to check every 5 minutes whether the student canceled his exam schedule in May. After I get the test date, I want to share this script but after talking with the offensive-security party whether to make the robot to check the exam schedule automatically it turns out something like this is prohibited. So I undo the intention to share the script. hehehe <i>peace</i>
 
-Sebelum mulai saya membaca petunjuk dan peraturan dalam ujian ini disini [Exam Guide](https://support.offensive-security.com/#!oscp-exam-guide.md) perlu diingat petunjuk dan peraturan ujian bisa berubah sewaktu-waktu jadi pastikan baca petunjuknya lagi 3 jam sebelum memulai exam !.
+Before the exam begin, I am reading the instructions and rules for this exam in here [Exam Guide](https://support.offensive-security.com/#!oscp-exam-guide.md) need to remember the instructions and the rules about exam can changes at any time so read the instructions again 3 hours before the start of the exam !. 
 
-Waktu yang diberikan dalam exam ini adalah 24 jam, hanya ada 6 mesin yang diberikan kepada kita 1 mesin hanya sebagai debugger untuk test exploit stack overflow. 
-Dengan Point yang berbeda-beda disetiap mesinnya, point yang paling tinggi adalah 25 point dan yang paling kecil adalah 10 point.
+The time given in this exam is 24 hours, there are only 6 machines given to me 1 machine just as a debugger to test exploit stack overflow. Every each machine have different points, the highest point is 25 points and the smallest is 10 points.
 
-Untuk lulus dalam ujian diperlukan 70 point dari 100 point, Jika hanya dapat 65 point dapat dibantu bonus point dari laporan hasil lab internal minimal 10 mesin dengan metode serangan yang berbeda-beda serta soal latihan yang berada pada silabus modul pwk (Penetresting with Kali-linux) dan nilai bonus point tersebut adalah 5 point. Sangat cukup membantu jika kekurangan point untuk lulus. 
+To pass the exam required 70 points from 100 points, If only 65 points can be assisted bonus points from the report of the internal lab results of at least 10 machines with different methods of attack and finishing the exercise that are on the pwk module (Penetresting with Kali-linux ) and the bonus point value is 5 points. Very helpful if the lack of points to pass.
 
-Pada saat ujian dimulai, Saya mendapatkan email dari offensive-security mengenai akses login untuk ujian dan URL dashboard control panel ujiannya. Pada control panel ini terdapat objektif yang harus kita selesai kan beserta form untuk submit isi file local.txt dan proof.txt. 
+When the exam starts, I got an offensive-security email about login access for the exam and the dashboard URL of the exam control panel. This control panel have an objective that we must finish it along with the form to submit the contents of local.txt and proof.txt files.
 
-Berikut adalah timeline pengerjaan saya dalam exam, kurang lebih seperti ini : 
+Here is the timeline of my progress in the exam, more or less like this: 
 
-timeline :
-* 00:00 am - 02:00 am : Information Gathering, scanning port disetiap mesin.
-* 02:00 am - 04:00 am : Berhasil retas 1 mesin +10 point
-* 04:00 am - 05:00 am : Istirahat, makan sahur + sholat shubuh.
-* 05:00 am - 06:00 am : Berhasil retas 1 mesin stack overflow +25 point
-* 06:00 am - 09:00 am : Tidur, tidur, tidur.
-* 09:00 am - 12:00 am : Berhasil retas 1 mesin +20 point 
-* 12:00 pm - 13:00 pm : Sholat dzuhur + Mandi
-* 13:00 pm - 17:00 pm : enum, enum, enum 
-* 17:00 pm - 20:20 pm : Berhasil retas 1 mesin +25 point
-* 20:20 pm - 21:30 pm : enum, enum, enum mesin terakhir.
-* 21:30 pm - END      : Saya ketiduran sehingga tidak bisa menyelesaikan mesin yang terakhir dengan nilai point 20
+Timeline :
+* 00:00 am - 02:00 am : Information Gathering, scanning ports in every machine.
+* 02:00 am - 04:00 am : Successfully pawning 1 machine +10 point
+* 04:00 am - 05:00 am : Rest, eat sahur + pray shubuh.
+* 05:00 am - 06:00 am : Successfully pawning 1 stack overflow +25 point machine
+* 06:00 am - 09:00 am : Sleeping, sleeping, sleeping.
+* 09:00 am - 12:00 am : Successfully pawning 1 machine +20 point
+* 12:00 pm - 13:00 pm : Dzuhur Prayer + Shower
+* 13:00 pm - 17:00 pm : enum, enum, enum
+* 17:00 pm - 20:20 pm : Successfully pawning 1 machine +25 point
+* 20:20 pm - 21:30 pm : enum, enum, enum last machine.
+* 21:30 pm - END      : I overslept at my desk so I could not finish the last machine with a point value of 20
 
-Pada pukul 17:00 pm - 20:20 pm sebenernya saya sudah tidak fokus lagi disini, saya khawatir dan takut akan gagal dalam ujian ini. Dikarenakan saya belum di posisi aman, saya harus meretas 1 mesin lagi untuk bisa lulus. Sakin tidak fokusnya tangan saya gemetar, dikepala serasa ada burung-burung yang terbang mengelilingi kepala saya, akhirnya saya istirahat sejenak sekitar 5 menit untuk menjernihkan otak sementara karena dalam waktu selama itu saya belum berhasil melakukan privelege escalation di mesin yang ke tiga, hanya dapat low shell. Akhirnya setelah enumerasi perlahan-lahan saya berhasil mendapatkan akses root pada mesin tersebut :) 
+At 17:00 pm - 20:20 pm actually I'm not focused anymore here, I'm worried and afraid will be fail in this exam. Since I have not been in a safe position, I have to hack 1 more machine to pass. Sakin did not focus my hands trembling, headed like there are birds flying around my head, I finally take a break about 5 minutes to clear the brain temporarily because in that time I have not managed to do privelege escalation on the third machine, only get low shell. Finally after enumerating slowly I managed to get root access on the machine :)
 
 <figure>
 	<a href="https://78.media.tumblr.com/412e18b8c19a1cc75f77b0d4f672073c/tumblr_p16yf0SkWa1tsyxa7o1_500.gif"><img src="https://78.media.tumblr.com/412e18b8c19a1cc75f77b0d4f672073c/tumblr_p16yf0SkWa1tsyxa7o1_500.gif"></a>
 </figure>
 
-Akhirnya saya dapat menyelesaikan 4 mesin dengan jumlah point adalah 80 point, sudah cukup untuk lolos ujian ini :) ya walaupun saya menyesalkan akibat ketiduran tapi untuk lulus saja sudah sangat senang :) dan akibatnya saya ketinggalan sahur untuk makan :(
+Finally I can finish 4 machines with the total points is 80 points, is enough to pass this exam :) although I regret due to overslept but i am very happy to pass it :) and the consequently I miss sahur to eat i dont eat until 3am to 6pm 
 
-Kemudian esok harinya saya membuat laporan untuk dikirimkan kepada pihak offensive-security sesuai dengan format yang sudah ditetapkan pada halaman berikut ini [Submission Instructions](https://support.offensive-security.com/#!oscp-exam-guide.md) karena jika tidak sesuai dengan ketentuan yang ada satupun maka laporan kita akan ditolak dan otomatis akan gagal. 
+Then the next day I made a report to send to offensive-security in accordance with the format specified on the following page [Submission Instructions](https://support.offensive-security.com/#!oscp-exam-guide.md) because if not in accordance with the provisions of any one then our report will be rejected and will automatically fail.
 
-Setelah 2 hari kemudian saya mendapatkan email berikut : 
+After 2 days then I get the email from offensive-security :
 
 <figure>
 	<a href="/images/oscp-exam-result.PNG"><img src="/images/oscp-exam-result.PNG"></a>
 	<figcaption>Penetration Testing with Kali Linux - OSCP Certification Exam Results - OS-XXXXXX</figcaption>
 </figure>
 
-Wow, Saya lulus !
+Wow, I am pass !! 
 
 <figure>
 	<a href="https://lh3.googleusercontent.com/CBMuZb8_mEFh46IQM2UGM2Pu-AlPkGJECx1QLphn0bQ=w688-h264-no"><img src="https://lh3.googleusercontent.com/CBMuZb8_mEFh46IQM2UGM2Pu-AlPkGJECx1QLphn0bQ=w688-h264-no"></a>
 	<figcaption>YES I AM TRIED HARDER !</figcaption>
 </figure>
 
-## Saran
-1. Pastikan kondisi anda sedang fit dan tidak sakit, jaga kondisi kesehatan anda karna otak anda akan dipaksa bekerja 24 jam.
-
+## Suggestions
+1. Make sure your condition is fit and not sick, keep your health condition because your brain will be forced to work 24 hours.
 <figure>
 	<a href="/images/oscp-brain-talking.jpg"><img src="/images/oscp-brain-talking.jpg"></a>
 	<figcaption>Brain Talking</figcaption>
 </figure>
+2. Understand the basics of networking and programming.
+3. Make sure your time is specific to OSCP, so your focus is only for OSCP. Honestly take OSCP while create the undergraduate thesis is not good !!
+4. Complete all the exercises in the pwk module and 10 machines on lab to get bonus points. Unless you are sure enough to pass the exam, myself only send the test report just because I have not finished the exercises in the pwk module because it is too focused on the internal lab.
+5. Sleep enough.
+6. Beleive
 
-Sehari sebelum ujian, saya sakit kekurangan darah. Karena kekurangan istirahat, sudah banyak begadang dari hari-hari sebelumnya.
+## Thank you note.
+As gratitude I would like to thank the family who have supported me throughout this OSCP until exams are over, Thanks to my girlfriend whom remind me to take some food to eat at sahur and at Maghrib during exam (It will be fun if you have girlfriend :D ), and of course for my friends from work [Vantage Point Security Singapore](http://vantagepoint.sg/) & [Vantage Point Security Indonesian](http://vantagepoint.co.id/) Wen bin, Eka Tan, Ryan, JK, Saed, David Harley, Wira, Suman, James, David, dan tuyen whom give me a motivation and suggestions. Especially for Paul Craig who has provided accommodation during the exam and give me a motivation so far.
 
-2. Paham dasar-dasar jaringan dan pemograman.
-3. Pastikan waktu anda khusus untuk OSCP, agar fokus anda hanya untuk OSCP. Jujur ambil OSCP sambil skripsian itu gak enakkkkk!! 
-4. Selesaikan semua soal latihan di sylabus module pwk dan 10 mesin dilab internal untuk mendapatkan bonus point. Kecuali jika anda cukup yakin untuk lulus, saya sendiri hanya mengirimkan laporan ujiannya saja dikarenakan saya belum menyelesaikan soal-soal latihan didalam sylabus module pwk karena terlalu fokus pada lab internal.
-5. Tidur yang cukup
-6. Yakin dan berdoa.
+## Note
 
-## Ucapan Terima Kasih
-Sebagai rasa syukur saya mengucapkan terima kasih kepada keluarga yang telah mendukung saya selama perjalanan oscp ini hingga ujian selesai, Terima kasih juga kepada pacar saya dea zachra aulia yang sudah ingetin buat sahur sama buka puasa selama ujian (Enak ya ga jomblo :D ), dan tentunya buat teman-teman dari kantor [Vantage Point Security Singapore](http://vantagepoint.sg/) & [Vantage Point Security Indonesian](http://vantagepoint.co.id/) Wen bin, Eka Tan, Ryan, JK, Saed, David Harley, Wira, Suman, James, David, dan tuyen yang telah memberikan semangat kepada saya. Spesial khusus untuk Paul Craig yang telah menyediakan akomodasi selama ujian dan memberikan motivasi selama ini. 
+The translate powered by [g00gle Translate](https://translate.google.com/)
