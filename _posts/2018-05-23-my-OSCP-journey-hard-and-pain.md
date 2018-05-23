@@ -16,7 +16,7 @@ comments: true
 
 Alhamdulillah, I finally got another chance to blogging, after so long after my personal website removed because I cant pay hosting bills and domain (Ups) wkwkkwk. And now I decided to use [github pages](https://pages.github.com/) as my personal website :)
 
-Okay,i want to tell you a little about my experience during the trip to OSCP certification, in 2014 I had a dream to get this OSCP certification because I heard from my friends in [forum](http://www.indonesianbacktrack.or.id/forum/index.php), I believe that having this certification is the greatest thing in achieving being a penetration testing IT expert (https://en.wikipedia.org/wiki/Penetration_test) because it's not easy to get it, but in this year 2018 coinciding in [ramadhan holy month](https://en.wikipedia.org/wiki/Ramadan) alhamdulillah I had the opportunity to realize my dream 4 years ago. What a valuable thing in my life, because dreams come true. I am really grateful to Allah swt and [PT Vantage Point Indonesia](http://vantagepoint.co.id/) who has helped me realize my dream.
+Okay,i want to tell you a little about my experience during the trip to OSCP certification, in 2014 I had a dream to get this OSCP certification because I heard from my friends in [forum](http://www.indonesianbacktrack.or.id/forum/index.php), I believe that having this certification is the greatest thing in achieving being a [penetration testing IT expert](https://en.wikipedia.org/wiki/Penetration_test) because it's not easy to get it, but in this year 2018 coinciding in [ramadhan holy month](https://en.wikipedia.org/wiki/Ramadan) alhamdulillah I had the opportunity to realize my dream 4 years ago. What a valuable thing in my life, because dreams come true. I am really grateful to Allah swt and [PT Vantage Point Indonesia](http://vantagepoint.co.id/) who has helped me realize my dream.
 
 Basicly, i am programmer, not expert not noob hmm ya midle :D , i interested IT Security since i am in junior high school and now continues studiy at universities in jakarta and doing final task (undergraduate thesis) ! 
 
@@ -114,6 +114,8 @@ Wow, I am pass !!
 
 ## Thank you note.
 As gratitude I would like to thank the family who have supported me throughout this OSCP until exams are over, Thanks to my girlfriend whom remind me to take some food to eat at sahur and at Maghrib during exam (It will be fun if you have girlfriend :D ), and of course for my friends from work [Vantage Point Security Singapore](http://vantagepoint.sg/) & [Vantage Point Security Indonesian](http://vantagepoint.co.id/) Wen bin, Eka Tan, Ryan, JK, Saed, David Harley, Wira, Suman, James, David, dan tuyen whom give me a spirit and motivation. Especially for Paul Craig who has provided accommodation during the exam and give me a motivation so far also very kindness.
+
+and for my 
 
 ## Note
 
