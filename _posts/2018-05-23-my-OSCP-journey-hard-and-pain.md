@@ -102,10 +102,10 @@ Wow, I am pass !!
 
 ## Suggestions
 1. Make sure your condition is fit and not sick, keep your health condition because your brain will be forced to work 24 hours.
-<figure>
-	<a href="/images/oscp-brain-talking.jpg"><img src="/images/oscp-brain-talking.jpg"></a>
-	<figcaption>Brain Talking</figcaption>
-</figure>
+	<figure>
+		<a href="/images/oscp-brain-talking.jpg"><img src="/images/oscp-brain-talking.jpg"></a>
+		<figcaption>Brain Talking</figcaption>
+	</figure>
 2. Understand the basics of networking and programming.
 3. Make sure your time is specific to OSCP, so your focus is only for OSCP. Honestly take OSCP while create the undergraduate thesis is not good !!
 4. Complete all the exercises in the pwk module and 10 machines on lab to get bonus points. Unless you are sure enough to pass the exam, myself only send the test report just because I have not finished the exercises in the pwk module because it is too focused on the internal lab.
@@ -113,7 +113,7 @@ Wow, I am pass !!
 6. Beleive
 
 ## Thank you note.
-As gratitude I would like to thank the family who have supported me throughout this OSCP until exams are over, Thanks to my girlfriend whom remind me to take some food to eat at sahur and at Maghrib during exam (It will be fun if you have girlfriend :D ), and of course for my friends from work [Vantage Point Security Singapore](http://vantagepoint.sg/) & [Vantage Point Security Indonesian](http://vantagepoint.co.id/) Wen bin, Eka Tan, Ryan, JK, Saed, David Harley, Wira, Suman, James, David, dan tuyen whom give me a motivation and suggestions. Especially for Paul Craig who has provided accommodation during the exam and give me a motivation so far.
+As gratitude I would like to thank the family who have supported me throughout this OSCP until exams are over, Thanks to my girlfriend whom remind me to take some food to eat at sahur and at Maghrib during exam (It will be fun if you have girlfriend :D ), and of course for my friends from work [Vantage Point Security Singapore](http://vantagepoint.sg/) & [Vantage Point Security Indonesian](http://vantagepoint.co.id/) Wen bin, Eka Tan, Ryan, JK, Saed, David Harley, Wira, Suman, James, David, dan tuyen whom give me a motivation and suggestions. Especially for Paul Craig who has provided accommodation during the exam and give me a motivation so far also very kindness.
 
 ## Note
 
