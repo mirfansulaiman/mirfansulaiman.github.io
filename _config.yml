@@ -9,7 +9,8 @@ background:         'assets/img/placeholder-big.jpg'
 tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
 locale:             en_US
 url:                https://mirfansulaiman.github.io
-
+google:
+  analytics:        UA-119820350-1 
 # Jekyll
 permalink:          /:title/
 markdown:           kramdown
