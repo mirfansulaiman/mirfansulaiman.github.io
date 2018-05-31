@@ -3,7 +3,8 @@ layout: post
 title: "Menghubungkan Burp Suite Pada Android Terbaru"
 date: 2018-05-31
 excerpt: "konfigurasi burp suite pada android terbaru untuk mobile penetration testing"
-tags: [it security, blog, indonesia, mobile pentest, android,]
+tags: [it security, blog, indonesia, mobile pentest, android]
+feature: http://i.imgur.com/Ds6S7lJ.png
 comments: true
 ---
 **Watch out!** Demo dan tutorial pada artikel ini adalah sebagai contoh dan pembelajaran, diluar dari itu penulis tidak bertanggung jawab. Jadi Gunakan secara Bijak !
@@ -45,10 +46,11 @@ Ini adalah cara yang paling simpel untuk bypass ssl pinning, tanpa harus melakuk
 #Konfigurasi
 
 ##Persiapan Burpsuite
-<figure>
-	<a href="https://portswigger.net/content/images/logos/portswigger-logo.svg"><img src="https://portswigger.net/content/images/logos/portswigger-logo.svg"></a>
-	<figcaption>Burpsuite</figcaption>
-</figure>
+
+	<figure>
+		<a href="https://portswigger.net/content/images/logos/portswigger-logo.svg"><img src="https://portswigger.net/content/images/logos/portswigger-logo.svg"></a>
+		<figcaption>Burpsuite</figcaption>
+	</figure>
 
 1. Atur proxy terlebih dahulu.
 
@@ -94,37 +96,37 @@ Ini adalah cara yang paling simpel untuk bypass ssl pinning, tanpa harus melakuk
 4. Install burp ssl cert <hash>.0 pada smartphone.
 	Selanjutnya adalah install ssl cert ke (system trusted credentials)[https://tamingthedroid.com/trusted-credentials] pada smartphone, kita memerlukan mounting `/system` agar bisa writable jika anda dapat melakukan perintah `adb root` jalankan perintah berikut : 
 
-	{% raw %}
-	# Remount and copy cert to device
-	adb root  
-	adb remount  
-	adb push 9a5ba575.0 /data/local/tmp/  
-	adb shell  
-	mido:/ # mv /data/local/tmp/9a5ba575.0 /system/etc/security/cacerts/  
-	mido:/ # chmod 644 /system/etc/security/cacerts/9a5ba575.0  
-	mido:/ # reboot 
-	{% endraw %} 
+    {% raw %}
+    # Remount and copy cert to device
+    adb root
+    adb remount  
+    adb push 9a5ba575.0 /data/local/tmp/  
+    adb shell  
+    mido:/ # mv /data/local/tmp/9a5ba575.0 /system/etc/security/cacerts/  
+    mido:/ # chmod 644 /system/etc/security/cacerts/9a5ba575.0  
+    mido:/ # reboot 
+    {% endraw %} 
 
-	Jika tidak bisa, lakukan perintah berikut : 
+    Jika tidak bisa, lakukan perintah berikut : 
 
-	{% raw %}
-	# Remount and copy cert to device
-	# Cek /system mounting.
-	cat /proc/mounts
-	#/dev/block/bootdevice/by-name/system /system ext4 ro,seclabel,relatime,discard,data=ordered 0 0
-	mount -o rw,remount -t rfs /dev/block/bootdevice/by-name/system /system 
+    {% raw %}
+    # Remount and copy cert to device
+    # Cek /system mounting.
+    cat /proc/mounts
+    #/dev/block/bootdevice/by-name/system /system ext4 ro,seclabel,relatime,discard,data=ordered 0 0
+    mount -o rw,remount -t rfs /dev/block/bootdevice/by-name/system /system
 
-	adb push 9a5ba575.0 /data/local/tmp/ 
-	adb shell  
-	mido:/ # mv /data/local/tmp/9a5ba575.0 /system/etc/security/cacerts/  
-	mido:/ # chmod 644 /system/etc/security/cacerts/9a5ba575.0  
-	mido:/ # reboot 
-	{% endraw %} 
-	
-	Setelah smartphone restart, cek system trusted credentials pada smartphone anda `Settings -> Additional Settings -> Privacy -> Trusted Credentials` . Jika seperti gambar dibawah ini berarti burp ssl cert berhasil kita pasang dismartphone kita.
+    adb push 9a5ba575.0 /data/local/tmp/
+    adb shell  
+    mido:/ # mv /data/local/tmp/9a5ba575.0 /system/etc/security/cacerts/  
+    mido:/ # chmod 644 /system/etc/security/cacerts/9a5ba575.0  
+    mido:/ # reboot 
+    {% endraw %} 
 
-	<figure>
-		<a href="/images/check-trusted-credentials.jpg"><img src="/images/check-trusted-credentials.jpg"></a>
+    Setelah smartphone restart, cek system trusted credentials pada smartphone anda `Settings -> Additional Settings -> Privacy -> Trusted Credentials` . Jika seperti gambar dibawah ini berarti burp ssl cert berhasil kita pasang dismartphone kita.
+
+    <figure>
+    	<a href="/images/check-trusted-credentials.jpg"><img src="/images/check-trusted-credentials.jpg"></a>
 	</figure>
 
 ## Persiapan Smartphone
@@ -133,24 +135,15 @@ Selanjutnya yang harus kita lakukan adalah melakukan konfigurasi proxy ke burp, 
 1. Buka aplikasi ProxyDroid.
 
 2. Setting Host dan Port ke proxy burp.
-	<figure>
+	<figure class="half">
 		<a href="/images/configure-proxydroid-final.jpg"><img src="/images/configure-proxydroid-final.jpg"></a>
-	</figure>
-
-3. Setting Aplikasi yang akan kita intercept
-	Jangan setting proxy secara global, karna akan melakukan intercept pada traffic yang berada dismartphone untuk menghindari itu dapat menggunakan `individual proxy` pada ProxyDroid
-
-	<figure>
+		<a href="/images/configure-proxydroid-individual-proxy.jpg"><img src="/images/configure-proxydroid-individual-proxy.jpg"></a>
 		<a href="/images/configure-proxydroid-individual-proxy.jpg"><img src="/images/configure-proxydroid-individual-proxy.jpg"></a>
 	</figure>
 
-	Pilih aplikasi yang akan kita intercept. Dalam tutorial ini saya mengambil contoh aplikasi berikut.
-	
-	<figure>
-		<a href="/images/configure-proxydroid-individual-proxy.jpg"><img src="/images/configure-proxydroid-individual-proxy.jpg"></a>
-	</figure>
+	Setting Aplikasi yang akan kita intercept, Jangan setting proxy secara global karna akan melakukan intercept pada traffic yang berada dismartphone untuk menghindari itu dapat menggunakan `individual proxy` pada ProxyDroid lalu pilih aplikasi yang akan kita intercept. Dalam tutorial ini saya mengambil contoh aplikasi bukalapak.
 
-4. Jalankan ProxyDroid.
+3. Jalankan ProxyDroid.
 
 # Penutup
 Langkah selanjutnya adalah tinggal menjalankan burp :)
