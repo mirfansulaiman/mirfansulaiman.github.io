@@ -47,10 +47,10 @@ Ini adalah cara yang paling simpel untuk bypass ssl pinning, tanpa harus melakuk
 
 ## Konfigurasi Burpsuite
     
-    <figure>
+   <figure>
        <a href="https://portswigger.net/content/images/logos/portswigger-logo.svg"><img src="https://portswigger.net/content/images/logos/portswigger-logo.svg"></a>
        <figcaption>Burpsuite</figcaption>
-    </figure>
+   </figure>
 
 1. Atur proxy terlebih dahulu.
     
@@ -74,52 +74,51 @@ Ini adalah cara yang paling simpel untuk bypass ssl pinning, tanpa harus melakuk
 3. Konversi cert DER ke cert PEM format
    Saya menggunakan openssl untuk melakukan konversi der ke pem, jika OpenSSL < 1.0 maka `subject_hash` tanpa old. Disini saya menggunakan openssl versi 1.1, jadi saya menggunakan `subject_hash_old`
    <figure >
-   	   <a href="/images/openssl-version-1.1.PNG"><img src="/images/openssl-version-1.1.PNG"></a>
+       <a href="/images/openssl-version-1.1.PNG"><img src="/images/openssl-version-1.1.PNG"></a>
    </figure>
-   {% raw %}
+
+   {% highlight html %}
    # Konversi DER ke PEM
    openssl x509 -inform DER -in cacert.der -out cacert.pem
    # Get subject_hash_old (or subject_hash if OpenSSL < 1.0)
    openssl x509 -inform PEM -subject_hash_old -in cacert.pem |head -1
    # Ganti nama cacert.pem ke <hash>.0
    mv cacert.pem 9a5ba575.0
-   {% endraw %}
+   {% endhighlight %}
 
    Nama cert saya adalah `9a5ba575.0`
 
 4. Install burp ssl cert <hash>.0 pada smartphone.
-	Selanjutnya adalah install ssl cert ke (system trusted credentials)[https://tamingthedroid.com/trusted-credentials] pada smartphone, kita memerlukan mounting `/system` agar bisa writable jika anda dapat melakukan perintah `adb root` jalankan perintah berikut : 
+   Selanjutnya adalah install ssl cert ke (system trusted credentials)[https://tamingthedroid.com/trusted-credentials] pada smartphone, kita memerlukan mounting `/system` agar bisa writable jika anda dapat melakukan perintah `adb root` jalankan perintah berikut : 
+   {% highlight html %}
+   # Remount and copy cert to device
+   adb root
+   adb remount  
+   adb push 9a5ba575.0 /data/local/tmp/  
+   adb shell  
+   mido:/ # mv /data/local/tmp/9a5ba575.0 /system/etc/security/cacerts/  
+   mido:/ # chmod 644 /system/etc/security/cacerts/9a5ba575.0  
+   mido:/ # reboot 
+   {% endhighlight %} 
+ 
+   Jika tidak bisa, lakukan perintah berikut : 
+   {% highlight html %}
+   # Remount and copy cert to device
+   # Cek /system mounting.
+   cat /proc/mounts
+   #/dev/block/bootdevice/by-name/system /system ext4 ro,seclabel,relatime,discard,data=ordered 0 0
+   mount -o rw,remount -t rfs /dev/block/bootdevice/by-name/system /system
 
-    {% raw %}
-    # Remount and copy cert to device
-    adb root
-    adb remount  
-    adb push 9a5ba575.0 /data/local/tmp/  
-    adb shell  
-    mido:/ # mv /data/local/tmp/9a5ba575.0 /system/etc/security/cacerts/  
-    mido:/ # chmod 644 /system/etc/security/cacerts/9a5ba575.0  
-    mido:/ # reboot 
-    {% endraw %} 
+   adb push 9a5ba575.0 /data/local/tmp/
+   adb shell  
+   mido:/ # mv /data/local/tmp/9a5ba575.0 /system/etc/security/cacerts/  
+   mido:/ # chmod 644 /system/etc/security/cacerts/9a5ba575.0  
+   mido:/ # reboot 
+   {% endhighlight %} 
 
-    Jika tidak bisa, lakukan perintah berikut : 
+   Setelah smartphone restart, cek system trusted credentials pada smartphone anda `Settings -> Additional Settings -> Privacy -> Trusted Credentials` . Jika seperti gambar dibawah ini berarti burp ssl cert berhasil kita pasang dismartphone kita.
 
-    {% raw %}
-    # Remount and copy cert to device
-    # Cek /system mounting.
-    cat /proc/mounts
-    #/dev/block/bootdevice/by-name/system /system ext4 ro,seclabel,relatime,discard,data=ordered 0 0
-    mount -o rw,remount -t rfs /dev/block/bootdevice/by-name/system /system
-
-    adb push 9a5ba575.0 /data/local/tmp/
-    adb shell  
-    mido:/ # mv /data/local/tmp/9a5ba575.0 /system/etc/security/cacerts/  
-    mido:/ # chmod 644 /system/etc/security/cacerts/9a5ba575.0  
-    mido:/ # reboot 
-    {% endraw %} 
-
-    Setelah smartphone restart, cek system trusted credentials pada smartphone anda `Settings -> Additional Settings -> Privacy -> Trusted Credentials` . Jika seperti gambar dibawah ini berarti burp ssl cert berhasil kita pasang dismartphone kita.
-
-    <figure>
+   <figure>
        <a href="/images/check-trusted-credentials.jpg"><img src="/images/check-trusted-credentials.jpg"></a>
    </figure>
 
