@@ -2,7 +2,7 @@
 layout: post
 title: "Menghubungkan Burp Suite Pada Android Terbaru"
 date: 2018-05-31
-excerpt: "konfigurasi burp suite pada android terbaru untuk mobile penetration testing"
+excerpt: "konfigurasi burp suite pada android terbaru untuk mobile penetration testing dan bug bounty."
 tags: [it security, blog, indonesia, mobile pentest, android]
 feature: http://i.imgur.com/Ds6S7lJ.png
 comments: true
@@ -15,16 +15,16 @@ comments: true
 	<a href="https://appsec-labs.com/wp-content/uploads/2014/06/3-main-mobiles-os-002-280x300.png"><img src="https://appsec-labs.com/wp-content/uploads/2014/06/3-main-mobiles-os-002-280x300.png"></a>
 </figure>
 
-Tutorial kali ini saya akan membagikan cara untuk menghubungkan burp suite pada hp android versi terbaru, Salah satu cara untuk mencegah traffic aplikasi agar tidak disadap adalah dengan memasang pin ke sertifikat (SSL Pinning). Penandaan sertifikat berarti bahwa pada setiap sambungan SSL, sertifikat yang disajikan oleh server akan dibandingkan dengan versi yang disimpan secara lokal. Sambungan hanya akan berhasil jika server dapat memberikan identitas yang benar. Ini adalah fitur keamanan yang diterapkan pada android diatas versi 7 (Android Nougat).
+Salah satu cara untuk mencegah traffic aplikasi agar tidak disadap adalah dengan memasang pin ke sertifikat ( [SSL Pinning](https://medium.com/@qomarullah/mengenal-ssl-pinning-untuk-keamanan-aplikasi-mobile-baac5be2ecf6) ). Penandaan sertifikat berarti bahwa pada setiap sambungan SSL, sertifikat yang disajikan oleh server akan dibandingkan dengan versi yang disimpan secara lokal. Sambungan hanya akan berhasil jika server dapat memberikan identitas yang benar. Pada android versi >= 7 (Android Nougat) untuk bypass ssl pinning membutuhkan trik khusus yang akan dijelaskan pada artikel ini beda halnya dengan android versi < 7, cukup atur proxy pada jaringan wifi di smartphone kita lalu burp dengan mudah melakukan intercept pada request traffic pada smartphone.
 
 <figure>
 	<a href="https://en.wikipedia.org/wiki/Android_version_history"><img src="/images/android-version.PNG"></a>
 	<figcaption>Wikipedia - Android Version May 2018</figcaption>
 </figure>
 
-Tapi kita bisa bypass ssl pinningnya dengan salah satu trik yang akan saya jelaskan pada tulisan ini, salah satunya adalah dengan menambahkan ssl cert milik burp suite pada [system trusted credentials](https://tamingthedroid.com/trusted-credentials) smartphone kita. 
+Tapi kita dapat bypass ssl pinningnya dengan salah satu trik yaitu menambahkan ssl cert milik burp pada [system trusted credentials](https://tamingthedroid.com/trusted-credentials) smartphone. Sehingga aplikasi akan mendeteksi bahwa cert milik burp berasal dari system smartphone bukan dari installasi oleh user. 
 
-Ini adalah cara yang paling simpel untuk bypass ssl pinning, tanpa harus melakukan decompile-compile file apk tersebut atau melalui `objections ssl-pinning bypass` atau dengan [frida](https://www.frida.re/) dynamic instrumentation
+Ini adalah cara yang paling gampang untuk bypass ssl pinning, tanpa harus melakukan decompile-compile file apk tersebut atau melalui `objections ssl-pinning bypass` atau dengan [frida](https://www.frida.re/) dynamic instrumentation. 
 
 ## Persiapan Hardware dan Software
 <figure>
@@ -145,6 +145,8 @@ Langkah selanjutnya adalah tinggal menjalankan burp :)
 <figure>
 	<a href="/images/example-app.PNG"><img src="/images/example-app.PNG"></a>
 </figure>
+
+> Catatan : Tidak semua aplikasi bisa dibypass ssl pinningnya dengan cara ini, karena ada cara untuk [mencegah bypass ssl pinning](https://www.guardsquare.com/en/blog/iOS-SSL-certificate-pinning-bypassing). Jika cara ini tidak berfungsi, silahkan coba dengan cara lain.
 
 Gunakan secara bijak, pastikan aplikasi yang ingin anda pentest memiliki bug bounty program untuk mendapatkan reward :) .
 
