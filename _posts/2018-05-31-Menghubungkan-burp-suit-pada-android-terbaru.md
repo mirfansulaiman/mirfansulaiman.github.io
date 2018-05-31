@@ -43,6 +43,7 @@ Ini adalah cara yang paling simpel untuk bypass ssl pinning, tanpa harus melakuk
    Smartphone dengan laptop/komputer harus berada pada jaringan yang sama. Disini saya menggunakan internet melalui hotspot dari smartphone hp saya. 
 
 #Konfigurasi
+
 ##Persiapan Burpsuite
 <figure>
 	<a href="https://portswigger.net/content/images/logos/portswigger-logo.svg"><img src="https://portswigger.net/content/images/logos/portswigger-logo.svg"></a>
@@ -77,7 +78,7 @@ Ini adalah cara yang paling simpel untuk bypass ssl pinning, tanpa harus melakuk
 		<a href="/images/openssl-version-1.1.PNG"><img src="/images/openssl-version-1.1.PNG"></a>
 	</figure>
 
-	{% highlight html %}
+	{% raw %}
 	# Konversi DER ke PEM
 	openssl x509 -inform DER -in cacert.der -out cacert.pem
 
@@ -86,14 +87,14 @@ Ini adalah cara yang paling simpel untuk bypass ssl pinning, tanpa harus melakuk
 
 	# Ganti nama cacert.pem ke <hash>.0
 	mv cacert.pem 9a5ba575.0
-	{% endhighlight %} 
+	{% endraw %} 
 
 	Nama cert saya adalah `9a5ba575.0`
 
 4. Install burp ssl cert <hash>.0 pada smartphone.
 	Selanjutnya adalah install ssl cert ke (system trusted credentials)[https://tamingthedroid.com/trusted-credentials] pada smartphone, kita memerlukan mounting `/system` agar bisa writable jika anda dapat melakukan perintah `adb root` jalankan perintah berikut : 
 
-	{% highlight html %}
+	{% raw %}
 	# Remount and copy cert to device
 	adb root  
 	adb remount  
@@ -102,10 +103,11 @@ Ini adalah cara yang paling simpel untuk bypass ssl pinning, tanpa harus melakuk
 	mido:/ # mv /data/local/tmp/9a5ba575.0 /system/etc/security/cacerts/  
 	mido:/ # chmod 644 /system/etc/security/cacerts/9a5ba575.0  
 	mido:/ # reboot 
-	{% endhighlight %} 
+	{% endraw %} 
 
 	Jika tidak bisa, lakukan perintah berikut : 
-	{% highlight html %}
+
+	{% raw %}
 	# Remount and copy cert to device
 	# Cek /system mounting.
 	cat /proc/mounts
@@ -117,31 +119,35 @@ Ini adalah cara yang paling simpel untuk bypass ssl pinning, tanpa harus melakuk
 	mido:/ # mv /data/local/tmp/9a5ba575.0 /system/etc/security/cacerts/  
 	mido:/ # chmod 644 /system/etc/security/cacerts/9a5ba575.0  
 	mido:/ # reboot 
-	{% endhighlight %} 
+	{% endraw %} 
 	
 	Setelah smartphone restart, cek system trusted credentials pada smartphone anda `Settings -> Additional Settings -> Privacy -> Trusted Credentials` . Jika seperti gambar dibawah ini berarti burp ssl cert berhasil kita pasang dismartphone kita.
 
 	<figure>
-	<a href="/images/check-trusted-credentials.jpg"><img src="/images/check-trusted-credentials.jpg"></a>
+		<a href="/images/check-trusted-credentials.jpg"><img src="/images/check-trusted-credentials.jpg"></a>
 	</figure>
 
 ## Persiapan Smartphone
 Selanjutnya yang harus kita lakukan adalah melakukan konfigurasi proxy ke burp, proxy burp saya berada pada alamat IP `192.168.43.189:8082` .
 
 1. Buka aplikasi ProxyDroid.
+
 2. Setting Host dan Port ke proxy burp.
 	<figure>
-	<a href="/images/configure-proxydroid-final.jpg"><img src="/images/configure-proxydroid-final.jpg"></a>
+		<a href="/images/configure-proxydroid-final.jpg"><img src="/images/configure-proxydroid-final.jpg"></a>
 	</figure>
+
 3. Setting Aplikasi yang akan kita intercept
 	Jangan setting proxy secara global, karna akan melakukan intercept pada traffic yang berada dismartphone untuk menghindari itu dapat menggunakan `individual proxy` pada ProxyDroid
+
 	<figure>
 		<a href="/images/configure-proxydroid-individual-proxy.jpg"><img src="/images/configure-proxydroid-individual-proxy.jpg"></a>
 	</figure>
 
 	Pilih aplikasi yang akan kita intercept. Dalam tutorial ini saya mengambil contoh aplikasi berikut.
+	
 	<figure>
-		<a href="/images/configure-proxydroid-individual-app.jpg"><img src="/images/configure-proxydroid-individual-app.jpg"></a>
+		<a href="/images/configure-proxydroid-individual-proxy.jpg"><img src="/images/configure-proxydroid-individual-proxy.jpg"></a>
 	</figure>
 
 4. Jalankan ProxyDroid.
@@ -150,7 +156,7 @@ Selanjutnya yang harus kita lakukan adalah melakukan konfigurasi proxy ke burp, 
 Langkah selanjutnya adalah tinggal menjalankan burp :)
 
 <figure>
-	<a href="/images/example-app.jpg"><img src="/images/example-app.jpg"></a>
+	<a href="/images/example-app.PNG"><img src="/images/example-app.PNG"></a>
 </figure>
 
 Gunakan secara bijak, pastikan aplikasi yang ingin anda pentest memiliki bug bounty program untuk mendapatkan reward :) .
