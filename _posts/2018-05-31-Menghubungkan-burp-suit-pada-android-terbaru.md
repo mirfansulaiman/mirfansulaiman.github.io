@@ -43,55 +43,49 @@ Ini adalah cara yang paling simpel untuk bypass ssl pinning, tanpa harus melakuk
 4. Internet
    Smartphone dengan laptop/komputer harus berada pada jaringan yang sama. Disini saya menggunakan internet melalui hotspot dari smartphone hp saya. 
 
-#Konfigurasi
+# Konfigurasi
 
-##Persiapan Burpsuite
-
-	<figure>
-		<a href="https://portswigger.net/content/images/logos/portswigger-logo.svg"><img src="https://portswigger.net/content/images/logos/portswigger-logo.svg"></a>
-		<figcaption>Burpsuite</figcaption>
-	</figure>
+## Konfigurasi Burpsuite
+    
+    <figure>
+       <a href="https://portswigger.net/content/images/logos/portswigger-logo.svg"><img src="https://portswigger.net/content/images/logos/portswigger-logo.svg"></a>
+       <figcaption>Burpsuite</figcaption>
+    </figure>
 
 1. Atur proxy terlebih dahulu.
+    
+    <figure class="half">
+        <a href="/images/configure-burp-proxy.PNG"><img src="/images/configure-burp-proxy.PNG"></a>
+        <a href="/images/configure-burp-proxy-final.PNG"><img src="/images/configure-burp-proxy-final.PNG"></a>
+    </figure>
 
-	<figure class="half">
-		<a href="/images/configure-burp-proxy.PNG"><img src="/images/configure-burp-proxy.PNG"></a>
-		<a href="/images/configure-burp-proxy-final.PNG"><img src="/images/configure-burp-proxy-final.PNG"></a>
-	</figure>
-
-	Atur terlebih dahulu port proxy pada burp, disini saya menggunakan `port 8082` dengan listen pada ip wifi saya `192.168.43.189` yang nantinya akan digunakan sebagai proxy di smartphone.
+    Atur terlebih dahulu port proxy pada burp, disini saya menggunakan `port 8082` dengan listen pada ip wifi saya `192.168.43.189` yang nantinya akan digunakan sebagai proxy di smartphone.
 
 2. Export burp ssl cert
+    
+    <figure class="half">
+        <a href="/images/export-burp-cert.PNG"><img src="/images/export-burp-cert.PNG"></a>
+        <a href="/images/export-burp-cert-save.PNG"><img src="/images/export-burp-cert-save.PNG"></a>
+    </figure>
 
-	<figure class="half">
-		<a href="/images/export-burp-cert.PNG"><img src="/images/export-burp-cert.PNG"></a>
-		<a href="/images/export-burp-cert-save.PNG"><img src="/images/export-burp-cert-save.PNG"></a>
-	</figure>
-
-	Export burp ssl cert untuk kita pasang pada smartphone, save dengan nama `cacert.der`.
-	Pada android sertifikat ssl harus pada PEM format dengan nama file `subject_hash_old` dan ekstensi .0 
+    Export burp ssl cert untuk kita pasang pada smartphone, save dengan nama `cacert.der`.
+    Pada android sertifikat ssl harus pada PEM format dengan nama file `subject_hash_old` dan ekstensi .0 
 
 3. Konversi cert DER ke cert PEM format
-	
-	Saya menggunakan openssl untuk melakukan konversi der ke pem, jika OpenSSL < 1.0 maka `subject_hash` tanpa old. 
-	Disini saya menggunakan openssl versi 1.1, jadi saya menggunakan `subject_hash_old`
+   Saya menggunakan openssl untuk melakukan konversi der ke pem, jika OpenSSL < 1.0 maka `subject_hash` tanpa old. Disini saya menggunakan openssl versi 1.1, jadi saya menggunakan `subject_hash_old`
+   <figure >
+   	   <a href="/images/openssl-version-1.1.PNG"><img src="/images/openssl-version-1.1.PNG"></a>
+   </figure>
+   {% raw %}
+   # Konversi DER ke PEM
+   openssl x509 -inform DER -in cacert.der -out cacert.pem
+   # Get subject_hash_old (or subject_hash if OpenSSL < 1.0)
+   openssl x509 -inform PEM -subject_hash_old -in cacert.pem |head -1
+   # Ganti nama cacert.pem ke <hash>.0
+   mv cacert.pem 9a5ba575.0
+   {% endraw %}
 
-	<figure >
-		<a href="/images/openssl-version-1.1.PNG"><img src="/images/openssl-version-1.1.PNG"></a>
-	</figure>
-
-	{% raw %}
-	# Konversi DER ke PEM
-	openssl x509 -inform DER -in cacert.der -out cacert.pem
-
-	# Get subject_hash_old (or subject_hash if OpenSSL < 1.0)
-	openssl x509 -inform PEM -subject_hash_old -in cacert.pem |head -1
-
-	# Ganti nama cacert.pem ke <hash>.0
-	mv cacert.pem 9a5ba575.0
-	{% endraw %} 
-
-	Nama cert saya adalah `9a5ba575.0`
+   Nama cert saya adalah `9a5ba575.0`
 
 4. Install burp ssl cert <hash>.0 pada smartphone.
 	Selanjutnya adalah install ssl cert ke (system trusted credentials)[https://tamingthedroid.com/trusted-credentials] pada smartphone, kita memerlukan mounting `/system` agar bisa writable jika anda dapat melakukan perintah `adb root` jalankan perintah berikut : 
@@ -126,22 +120,23 @@ Ini adalah cara yang paling simpel untuk bypass ssl pinning, tanpa harus melakuk
     Setelah smartphone restart, cek system trusted credentials pada smartphone anda `Settings -> Additional Settings -> Privacy -> Trusted Credentials` . Jika seperti gambar dibawah ini berarti burp ssl cert berhasil kita pasang dismartphone kita.
 
     <figure>
-    	<a href="/images/check-trusted-credentials.jpg"><img src="/images/check-trusted-credentials.jpg"></a>
-	</figure>
+       <a href="/images/check-trusted-credentials.jpg"><img src="/images/check-trusted-credentials.jpg"></a>
+   </figure>
 
-## Persiapan Smartphone
+## Konfigurasi Smartphone
 Selanjutnya yang harus kita lakukan adalah melakukan konfigurasi proxy ke burp, proxy burp saya berada pada alamat IP `192.168.43.189:8082` .
 
 1. Buka aplikasi ProxyDroid.
 
 2. Setting Host dan Port ke proxy burp.
-	<figure class="half">
-		<a href="/images/configure-proxydroid-final.jpg"><img src="/images/configure-proxydroid-final.jpg"></a>
-		<a href="/images/configure-proxydroid-individual-proxy.jpg"><img src="/images/configure-proxydroid-individual-proxy.jpg"></a>
-		<a href="/images/configure-proxydroid-individual-proxy.jpg"><img src="/images/configure-proxydroid-individual-proxy.jpg"></a>
-	</figure>
+   
+   <figure class="third">
+      <a href="/images/configure-proxydroid-final.jpg"><img src="/images/configure-proxydroid-final.jpg"></a>
+   	  <a href="/images/configure-proxydroid-individual-proxy.jpg"><img src="/images/configure-proxydroid-individual-proxy.jpg"></a>
+   	  <a href="/images/configure-proxydroid-individual-proxy.jpg"><img src="/images/configure-proxydroid-individual-proxy.jpg"></a>
+   </figure>
 
-	Setting Aplikasi yang akan kita intercept, Jangan setting proxy secara global karna akan melakukan intercept pada traffic yang berada dismartphone untuk menghindari itu dapat menggunakan `individual proxy` pada ProxyDroid lalu pilih aplikasi yang akan kita intercept. Dalam tutorial ini saya mengambil contoh aplikasi bukalapak.
+   Setting Aplikasi yang akan kita intercept, Jangan setting proxy secara global karna akan melakukan intercept pada traffic yang berada dismartphone untuk menghindari itu dapat menggunakan `individual proxy` pada ProxyDroid lalu pilih aplikasi yang akan kita intercept. Dalam tutorial ini saya mengambil contoh aplikasi bukalapak.
 
 3. Jalankan ProxyDroid.
 
