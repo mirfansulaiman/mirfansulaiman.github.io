@@ -50,6 +50,7 @@
     {% unless background contains 'http://' or background contains 'https://' %}{% capture background %}{{ site.url }}/{{ background }}{% endcapture %}{% endunless %}
     <style type="text/css">body {background-image:url({{ background }}); {% unless site.tiled_bg %} background-repeat: no-repeat; background-size: cover; {% endunless %}}</style>
     {% endif %}
+    <script data-ad-client="ca-pub-4151715051529024" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <!-- Post Feature Image -->
     {% if page.feature %}
     {% capture feature %}{{ page.feature }}{% endcapture %}
