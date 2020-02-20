@@ -6,7 +6,7 @@ excerpt: "Pengalaman saya selama perjalanan menuju sertifikasi OSCP"
 tags: [it security, OSCP, blog, indonesia]
 comments: true
 ---
-**Watch out!** Artikel ini ditulis dalam versi bahasa indonesia, untuk versi bahasa inggris ada disini [english version](http://mirfansulaiman.github.io/my-OSCP-journey-hard-and-pain)
+**Watch out!** Saya tidak menerima jasa JOKI EXAM OSCP silahkan cari orang lain :)
 {: .notice}
 
 ## Pendahuluan
