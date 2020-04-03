@@ -1,5 +1,5 @@
 # Site
-title:              mirfansulaiman
+title:              Welcome to My Blog
 bio:                'Someone who comes from planet earth and want to share his knowledge.'
 description:        "My Abnormal Activity."
 reading_time:       true
@@ -8,7 +8,8 @@ logo:               'assets/img/logo.jpg'
 background:         'assets/img/placeholder-big.jpg'
 tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
 locale:             en_US
-url:                https://mirfansulaiman.github.io/
+url:                https://mirfansulaiman.github.io
+#url:                http://127.0.0.1:4000
 google:
   analytics:        UA-119820350-1 
 # Jekyll
@@ -64,7 +65,8 @@ gems:
   - jekyll-gist
 
 jekyll-mentions:
-        base_url: https://mirfansulaiman.github.io/
+        base_url: https://mirfansulaiman.github.io  
+        #base_url: http://127.0.0.1:4000
 
 # Exclude list
 exclude: [README.md, Gemfile, Gemfile.lock, node_modules, gulpfile.js, package.json, _site, src, vendor, CNAME, LICENSE, Rakefile]
