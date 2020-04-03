@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Menghubungkan VPN dan Tor Browser pada Burpsuite di Windows agar tidak terlacak"
+title: "Menghubungkan VPN dan Tor Browser pada Burpsuite di Windows agar IP Address tidak terlacak"
 date: 2020-04-03
-excerpt: "Cara menghubungkan VPN dan Tor Browser pada Burpsuite di Windows untuk melakukan kegiatan hacking agar tidak terlacak atau bypass blocked firewall"
+excerpt: "Cara menghubungkan VPN dan Tor Browser pada Burpsuite di Windows untuk melakukan kegiatan hacking agar IP Address kita tidak terlacak dan cara bypass blocked firewall ketika menggunakan burpsuite"
 tags: [it security, blog, indonesia, burpsuite, web hacking, vpn, tor browser]
 feature: /images/2020/4/3/schema-konfigurasi.PNG
 comments: true
