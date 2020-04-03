@@ -27,6 +27,12 @@ Schemanya adalah seperti gambar berikut:
 
 Kita menggunakan TOR Browser sebagai proxy server untuk digunakan pada burpsuite karena pada tor browser kita tidak bisa menginstall Burp Certificate jadi ketika ada website yang mempunyai security header HSTS (Strict-Transport-Security) tidak dapat diakses dengan burpsuite.
 
+<figure>
+  <img src="/images/2020/4/3/hsts-example.PNG">
+  <figcaption>Contoh website yang mengimplementasikan HSTS akan memunculkan warning ketika sedang menggunakan proxy burpsuite.</figcaption>
+</figure>
+
+
 Website ini [https://gf.dev/hsts-test](https://gf.dev/hsts-test) dapat digunakan untuk mengecek web target apakah menggunakan HSTS atau tidak.
 
 ## Persiapan 
@@ -43,30 +49,30 @@ Hal yang perlu disiapkan adalah :
 Pertama: Cek IP Address asli kita, bisa menggunakan website [whoer.net](https://whoer.net/).
 
 <figure>
-  <img src="/images/2020/4/3/tor-1.PNG">
+  <img src="/images/2020/4/3/tor-1.png">
   <figcaption>IP Address Asli</figcaption>
 </figure>
 
 <figure>
-  <img src="/images/2020/4/3/tor-2.PNG">
+  <img src="/images/2020/4/3/tor-2.png">
   <figcaption>DNS IP Address Asli</figcaption>
 </figure>
 
 Kemudian jalankan VPN Service terlebih dahulu, pastikan menggunakan lokasi server yang ringan pada vpn karena TOR Browser agak lelet.
 
 <figure>
-  <img src="/images/2020/4/3/tor-0.PNG">
+  <img src="/images/2020/4/3/tor-0.png">
   <figcaption>Terhubung dengan koneksi VPN</figcaption>
 </figure>
 
 Berikut adalah IP Address setelah menggunakan VPN: 
 <figure>
-  <img src="/images/2020/4/3/tor-3.PNG">
+  <img src="/images/2020/4/3/tor-3.png">
   <figcaption>IP Address dengan VPN</figcaption>
 </figure>
 
 <figure>
-  <img src="/images/2020/4/3/tor-4.PNG">
+  <img src="/images/2020/4/3/tor-4.png">
   <figcaption>DNS IP Address dengan VPN</figcaption>
 </figure>
 
@@ -79,12 +85,12 @@ Kedua: install TOR Browser pada windows kemudian jalankan TOR Browser.
 Berikut adalah IP Address saat menggunakan VPN: 
 
 <figure>
-  <img src="/images/2020/4/3/tor-5.PNG">
+  <img src="/images/2020/4/3/tor-5.png">
   <figcaption>IP Address dengan TOR Browser</figcaption>
 </figure>
 
 <figure>
-  <img src="/images/2020/4/3/tor-6.PNG">
+  <img src="/images/2020/4/3/tor-6.png">
   <figcaption>DNS IP Address dengan TOR Browser</figcaption>
 </figure>
 
@@ -95,7 +101,7 @@ Dengan menggunakan TOR Browser saja sudah cukup menyembunyikan IP Address Asli k
 Selanjutnya lakukan konfigurasi SOCKS Proxy pada burpsuite dengan IP Address dan Port dari TOR Browser, lihat gambar berikut ini:
 
 <figure>
-  <img src="/images/2020/4/3/burp-0.PNG">
+  <img src="/images/2020/4/3/burp-0.png">
   <figcaption>Konfigurasi SOCKS Proxy pada burpsuite</figcaption>
 </figure>
 
@@ -104,12 +110,12 @@ Kalau port 9150 tidak bisa coba gunakan port 9050 dan Jangan lupa centang pada 2
 Berikut adalah IP Address saat setelah menggunakan VPN dan TOR Browser: 
 
 <figure>
-  <img src="/images/2020/4/3/tor-7.PNG">
+  <img src="/images/2020/4/3/tor-7.png">
   <figcaption>IP Address dengan VPN dan TOR Browser</figcaption>
 </figure>
 
 <figure>
-  <img src="/images/2020/4/3/tor-8.PNG">
+  <img src="/images/2020/4/3/tor-8.png">
   <figcaption>DNS IP Address dengan VPN dan TOR Browser</figcaption>
 </figure>
 
