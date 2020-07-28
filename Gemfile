@@ -5,3 +5,4 @@ gem "jekyll-sitemap"
 gem "jekyll-gist"
 gem 'jekyll-mentions'
 gem 'jekyll-feed'
+gem "json", ">= 2.3.0"
